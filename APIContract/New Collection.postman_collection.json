@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "727f0bbd-8af9-43ca-bb2e-ef27eaa2e08d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30504579"
+	},
+	"item": [
+		{
+			"name": "Predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Images[]",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "Age",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Skin-Type",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{URL}}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "Localhost/predict",
+			"type": "string"
+		}
+	]
+}
